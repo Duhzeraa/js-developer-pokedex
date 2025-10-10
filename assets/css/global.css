@@ -1,24 +1,41 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
-    background-color: #f6f8fc;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #f9e596, #fd9797); /* Gradiente suave */
+    color: #333;
+    line-height: 1.6;
 }
 
 .content {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem;
-    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-@media screen and (min-width: 992px) {
-    .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
-    }
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Azul escuro clean */
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+h1 img {
+    color: #e74c3c; /* Acento vermelho Pokémon */
+    width: 50px;
+    height: 50px;
+}
+
+/* Transições suaves para interações */
+button, input {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
 }
